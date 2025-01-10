@@ -1,0 +1,1 @@
+sudo docker run --gpus all  -itd  -p 6879:22 -p8554:8554 --shm-size=5g    -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/wl_project/deepstream_python_apps/:/opt/nvidia/deepstream/deepstream-7.1/sources/deepstream_python_apps -e GDK_SCALE -e GDK_DPI_SCALE  -e DISPLAY=:0 59b9dcba8b4b
